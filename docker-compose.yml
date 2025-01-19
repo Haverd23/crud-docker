@@ -9,7 +9,7 @@ services:
       ACCEPT_EULA: "Y"
       MSSQL_SA_PASSWORD: "Teste123@"
     volumes:
-      - livros-api:/var/opt/mssql
+      - crud-api:/var/opt/mssql
     networks:
       app-network:
         aliases:
@@ -40,7 +40,7 @@ services:
       - dotnet-backend
 
 volumes:
-  livros-api:
+  crud-api:
 
 networks:
   app-network:
